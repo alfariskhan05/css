@@ -13,33 +13,33 @@
     <h1>📄 DOCGUIDE</h1>
     <p>Your Gateway to Government Documentation, Scholarships & Jobs</p>
 
-    <!-- Logout Button -->
-    <div id="logoutSection" style="display:none;">
-      <button onclick="logout()">Logout</button>
-    </div>
-
-    <!-- Content Cards -->
     <div class="cards">
       <a class="card" href="https://doctrack-kdeyx6shw3o5zq4kkm6sba.streamlit.app/" target="_blank">
         <img src="assets/documents.png" alt="Document Checklist" />
         <h2>Document Checklist</h2>
-        <p>Get checklists & step-by-step procedures for Aadhaar, Passport, PAN & more.</p>
+        <p>Checklists & steps for Aadhaar, Passport, PAN & more.</p>
       </a>
 
       <a class="card" href="https://scholarshipfinder-v2hnv7fwrrezovqtvxb5sm.streamlit.app/" target="_blank">
         <img src="assets/scholarship.jpg" alt="Scholarship Finder" />
         <h2>Scholarship Finder</h2>
-        <p>Discover scholarships in Tamil Nadu based on eligibility and income.</p>
+        <p>Find scholarships in Tamil Nadu based on your profile.</p>
       </a>
 
       <a class="card" href="https://ai-interview-az2bvok6x4zwiecvstvpum.streamlit.app/" target="_blank">
         <img src="assets/interview.jpg" alt="AI Job Assistant" />
         <h2>AI Job Assistant</h2>
-        <p>Analyze skills, match jobs, and prepare with an AI interview simulator.</p>
+        <p>Match jobs, assess skills & try AI interview.</p>
       </a>
     </div>
   </div>
-  <script src="script.js"></script>
-  <script src="logout.js"></script> <!-- Reference the logout.js -->
+
+  <script>
+    function checkLogin() {
+      if (sessionStorage.getItem('loggedIn') !== 'true') {
+        window.location.href = "login.html";
+      }
+    }
+  </script>
 </body>
 </html>
