@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>DOCGUIDE</title>
   <link rel="stylesheet" href="style.css"/>
 </head>
-<body onload="checkLogin()">
+<body>
   <div class="container">
     <h1>📄 DOCGUIDE</h1>
     <p>Your Gateway to Government Documentation, Scholarships & Jobs</p>
@@ -14,25 +14,29 @@
     <div class="cards">
       <a class="card" href="https://doctrack-kdeyx6shw3o5zq4kkm6sba.streamlit.app/" target="_blank">
         <img src="assets/documents.png" alt="Document Checklist" />
-        <h2>Document Checklist</h2>
-        <p>Get checklists & step-by-step procedures for Aadhaar, Passport, PAN & more.</p>
+        <div class="card-content">
+          <h2>Document Checklist</h2>
+          <p>Checklists and step-by-step procedures for Aadhaar, Passport, PAN, etc.</p>
+        </div>
       </a>
 
       <a class="card" href="https://scholarshipfinder-v2hnv7fwrrezovqtvxb5sm.streamlit.app/" target="_blank">
         <img src="assets/scholarship.jpg" alt="Scholarship Finder" />
-        <h2>Scholarship Finder</h2>
-        <p>Discover scholarships in Tamil Nadu based on eligibility and income.</p>
+        <div class="card-content">
+          <h2>Scholarship Finder</h2>
+          <p>Discover scholarships in Tamil Nadu based on eligibility and income.</p>
+        </div>
       </a>
 
       <a class="card" href="https://ai-interview-az2bvok6x4zwiecvstvpum.streamlit.app/" target="_blank">
-        <img src="assets/interview.jpg" alt="AI Interview" />
-        <h2>AI Job Assistant</h2>
-        <p>Analyze skills, match jobs, and prepare with an AI interview simulator.</p>
+        <img src="assets/interview.jpg" alt="AI Job Assistant" />
+        <div class="card-content">
+          <h2>AI Job Assistant</h2>
+          <p>Analyze skills, find jobs, and practice with an AI interview simulator.</p>
+        </div>
       </a>
     </div>
   </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
 
