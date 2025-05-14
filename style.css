@@ -33,6 +33,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
+  margin-top: 2rem;
 }
 
 .card {
@@ -43,12 +44,13 @@ h1 {
   box-shadow: 0 12px 18px rgba(0, 0, 0, 0.5);
   text-decoration: none;
   color: #ffd700;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 16px 26px rgba(255, 215, 0, 0.25);
+  transform: translateY(-8px);
+  box-shadow: 0 16px 28px rgba(255, 215, 0, 0.3);
+  border-color: #ffd700;
 }
 
 .card img {
@@ -56,6 +58,7 @@ h1 {
   height: 80px;
   margin-bottom: 1rem;
   border-radius: 12px;
+  object-fit: cover;
 }
 
 .card h2 {
@@ -64,5 +67,24 @@ h1 {
 }
 
 .card p {
-  font-size: 1rem
+  font-size: 1rem;
+  color: #dcdcdc;
+}
 
+/* 🔐 Login link styling */
+.login-link {
+  display: inline-block;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #ffd700;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 1px dashed #ffd700;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.login-link:hover {
+  color: #ffc400;
+  border-color: #ffc400;
+}
