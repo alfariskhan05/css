@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Login | DOCGUIDE</title>
-  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="login-container">
@@ -17,18 +17,16 @@
   </div>
 
   <script>
-    document.getElementById('loginForm').addEventListener('submit', function (e) {
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
       e.preventDefault();
-
       const username = document.getElementById('username').value;
       const password = document.getElementById('password').value;
 
-      // Simple static login check
       if (username === "admin" && password === "password") {
         sessionStorage.setItem("loggedIn", "true");
         window.location.href = "index.html";
       } else {
-        alert("Invalid username or password");
+        alert("Invalid credentials");
       }
     });
   </script>
